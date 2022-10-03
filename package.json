@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "loadtest": "autocannon -c 800 -d 30 -w 8 --renderStatusCodes -W [ -c 4 -d 5 ] http://localhost:3000/"
   },
   "keywords": [],
   "author": "",
